@@ -6,7 +6,6 @@ function Linearsearch(arr,val){
         if(arr[i] == val){
             return i;
         }
-        
     }
     return -1
 }
