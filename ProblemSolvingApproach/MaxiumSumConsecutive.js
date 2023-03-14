@@ -28,5 +28,5 @@ function maxsubArray(arr,num) {
 
 }
 
-const result = maxsubArray([3,8,5,3,0,6,7],3)
+const result = maxsubArray([3,8,5,3,0,6,9],3)
 console.log(result)
