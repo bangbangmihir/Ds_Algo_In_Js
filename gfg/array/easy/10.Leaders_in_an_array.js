@@ -11,13 +11,11 @@ function LeaderElemets(arr){
         let j
         for(j=i+1;j<arr.length;j++){
             if(arr[i]<=arr[j]){
-               
                 break;
             }
         }
         if(j==arr.length){
             newarr.push(arr[i])
-           
         }
     }
 
