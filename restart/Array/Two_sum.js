@@ -29,8 +29,19 @@ console.log(targetSum([2, 7, 11, 15], 9));
 
 // Approach 2 : Using HashMap
 
+function targetSumTwo(arr, target) {
+    const map = new Map();
+    for(let i =0;i<arr.length;i++){
+        let resultantNumber = target - arr[i];
+        if(map.has(resultantNumber)){
+            return [map.get(resultantNumber),i]
+        }
+        map.set(arr[i],i)
+    }
+}
 
-// Time : 25:30
+
+console.log(targetSumTwo([3,2,4],6))
 
 
 
